@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI hoja de</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family:Tahoma (sans-serif);
+            background-color: #a3cedb; /* Fondo principal  */
+            color: #181818; /* Texto principal (gris oscuro) */
+            transition: background-color 0.5s, color 0.5s; /* Transición suave de colores */
+            background-image: url(WhatsApp\ Image\ 2024-03-11\ at\ 1.55.26\ PM.jpeg);
+        }
+
+        header {
+            background-color: fff;
+            padding: 10px;
+            text-align: center;
+            color: #181818; /* Texto blanco */
+            transition: background-color 0.5s, color 0.5s; /* Transición suave de colores */
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #a3cedb; /* Azul claro más oscuro */
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Asegura que el menú esté en la parte superior */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #181818; /* Texto principal (gris oscuro) */
+            padding: 10px;
+            transition: color 0.3s; /* Transición suave de color al pasar el mouse */
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #0054f0; /* Azul claro al pasar el mouse */
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0400ff; /* Línea gris debajo del enlace */
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff; /* Fondo blanco para las secciones */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Transición suave de colores */
+            margin-top: 80px; /* Para compensar el menú fijo */
+            box-sizing: border-box;
+            overflow: hidden; /* Para contener el float y evitar colisiones */
+        }
+
+        section:hover {
+            background-color: #f0f2fd; /* Gris más claro al pasar el mouse sobre una sección */
+        }
+
+        .profile-picture {
+            float: right; /* Flotar a la derecha */
+            margin-left: 20px; /* Espacio entre el texto y la imagen */
+            margin-bottom: 20px; /* Espacio debajo de la imagen */
+            max-width: 200px; /* Ancho máximo de la imagen */
+            border-radius: 50%; /* Borde redondeado para la imagen circular */
+            margin-right: 100px;
+        }
+        #seccion1{
+            position: relative;
+        }
+        .io{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 28%;
+            left: 77%;
+        }
+        .fondito{
+            height: 400px;
+            width: 400px;
+            top: 15%;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="padding-top: 60px;"> HOJA DE VIDA</h1>
+    </header>
+    <nav>
+        <a href="#seccion1">DATOS PERSONALES</a>
+        <a href="#seccion2">PRESENTACION</a>
+        <a href="#seccion3">INTERESES</a>
+        <a href="#seccion4">PROYECTOS A CORTO PLAZO</a>
+        <a href="#seccion5">CONOCIMIENTOS</a>
+        <a href="#seccion6">PORTAFOLIO</a>
+        <a href="#seccion7">VIDEO DE PRESENTACION</a>
+    </nav>
+
+    <section id="seccion1">
+        <h2>DATOS PERSONALES</h2>
+        <div class="profile-picture">
+            <img class="io" src="yo.jpeg" alt="Tu Foto">
+            <img class="fondito" src="fondo.jpeg">
+        </div>
+        <ul>
+            <li>Nombres y apellidos: Nathalia Jiménez Martínez</li>
+            <li>Lugar de nacimiento: Barranquilla/Colombia</li>
+            <li>Fecha de nacimiento: 15/02/23</li>
+            <li>Teléfono de contacto:3045869778</li>
+            <li>Dirección de correo electrónico: martineznathaly6083@gmail.com</li>
+            <li>Formación academica: Bachiller completo y técnica en desarrollo de software</li>
+        </ul>
+        
+        <div class="contact-info">
+            <p>Correo Electrónico: <a href="mailto:aqui tambien">martineznathaly6083@gmail.com</a></p>
+            <p>Teléfono:3045869778 </p>
+        </div>
+    </section>
+    <section id="seccion2">
+        <h2>PRESENTACION</h2>
+        <p> <font>¡HOLA! Mi nombre es Nathalia, soy una chica muy alegre, empatica, solidaria  
+            y por supuesto me gusta mucho programar.</font>
+
+        </p>
+    </section>
+    <section id="seccion3">
+        <h2>INTERESES</h2>
+        <h3></h3>
+        <ul>
+            
+        </ul>
+        <h3>Intereses</h3>
+        <ul>
+            <li>Ingenieria de sistemas</li>
+            <li>Culinaria</li>
+            <li>Cosmetología</li>
+        </ul>
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Programar</li>
+            <li>Maquillar</li>
+            <li>Leer</li>
+            <li>Cocinar</li>
+        </ul>
+    </section>
+    <section id="seccion4">
+        <h2>PROYECTOS A CORTO PLAZO</h2>
+        <p>Mis proyectos a corto plazo son
+            crear mi aplicación de cursos de maquillaje, tener una empresa
+        ahorrar y comprarme una casa, autos y una casa a mi padre   </p>
+    </section>
+    <section id="seccion5">
+        <h2>CONOCIMIENTOS</h2>
+        
+             Sé acerca de HTML, CCS y Python
+        </p>
+    </section>
+    <section id="seccion6">
+        <h2>PORTAFOLIO</h2>
+       <p> En este momento tenemos una empresa de alimentación saludable llamda ALIMPLUS</p>
+    </section>
+    <section id="seccion7">
+        <h2>VIDEO DE PRESENTACION</h2>
+        <video controls>
+            <source src="tu_video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </section>
+</body>
+</html>
+
+
